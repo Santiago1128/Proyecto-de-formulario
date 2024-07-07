@@ -5,9 +5,553 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario Pagina 1
     </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" 
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    
+    <style>
+        .right {
+            float: right;
+        }
+        </style>
+
+
 </head>
 <body>
-    <H1>Solicitud de año lectivo 2024</H1>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-1">
+            <img src="Logo de buenos aires.jpg" height="200" width="300"> <!--En todo caso este logo es provisional-->
+        </div>
+    </div>
+</div>
+
+<Center><H1><b>Solicitud de año lectivo 2024</b></H1></Center>
+
+<b><div class="right"><h5> N° <div id="Numerodehoja"> </h5></div></div></b><!--Esta linea esta pensada para funcionar junto a PHP, la idea es que vea en
+la base de datos el numero de hojas totales para asi poder asignarle a esta su correspondiente numero-->
+
+<br>
+<br>
+<br>
+
+<!--Aqui comienza la primer carilla-->
+<H2><b>Datos del establecimiento en el que se inscribe</b></H2>
+
+<br>
+
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-6">
+            <H5>
+                Clave provincial
+                <input type="number" id="claveprovincial1">
+            </H5>
+        </div>
+        
+        <div class="col-6">
+
+
+            <H5>
+                CUE
+                <input type="number" id="cue1">
+                <span style="color: gray;">A llenar por el establecimiento</span></H5>
+        </div>
+    </div>
+
+
+<br>
+
+<div class="row">
+    <div class="col-4">
+        <H5>
+            Nombre
+            <input type="text" id="nombre1">
+        </H5>
+    </div>
+
+    <div class="col-4">
+        <H5>
+            N°
+            <input type="number" id="numero1">
+        </H5>
+    </div>
+
+    <div class="col-4">
+        <H5>
+            Distrito
+            <input type="text" id="distrito1">
+        </H5>
+    </div>
+</div>
+
+<br>
+
+<div class="row">
+    <div class="col-2">
+        <H5>
+            Sector de gestion
+        </H5>
+    </div>
+
+    <div class="col-2">
+        <H5>
+            Estatal
+            <input type="radio" id="gestion1" name="grupo1" value="gestion1">
+        </H5>
+    </div>
+
+    <div class="col-2">
+        <H5>
+            Privado
+            <input type="radio" id="gestion2" name="grupo1" value="gestion2">
+        </H5>
+    </div>
+
+    <div class="col-2">
+        <H5>
+            Municipal
+            <input type="radio" id="gestion3" name="grupo1" value="gestion3">
+        </H5>
+    </div>
+
+    <div class="col-2">
+        <H5>
+            Nacional
+            <input type="radio" id="gestion4" name="grupo1" value="gestion4">
+        </H5>
+    </div>
+
+    <div class="col-2">
+        <H5>
+            Otro
+            <input type="radio" id="gestion5" name="grupo1" value="gestion5">
+        </H5>
+    </div>
+</div>
+
+</div><!--Este DIV cierra el Container-->
+<!--Aqui termina la primer carilla-->
+
+<br>
+<br>
+<br>
+
+<!--Aqui comienza la segunda carilla-->
+<h2 style="display: inline;"><b>Establecimiento educativo en procedencia</b></h2>
+<h6 style="display: inline; color: gray;">&nbsp;<span>Completar solo si el alumno ha concurrido a otros establecimientos</span></h6>
+
+<br>
+<br>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-4">
+            <H5>
+                Clave provincial
+                <input type="number" id="claveprovincial2">
+            </H5>
+        </div>
+
+        <div class="col-5">
+            <H5>
+                CUE
+                <input type="number" id="cue2">
+                <span style="color: gray;">Llenar por establecimiento</span></H5>
+            </H5>
+        </div>
+
+        <div class="col-3">
+            <H5>
+                Nivel
+                <input type="number" id="nivel/modalidad1">
+            </H5>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="col-4">
+            <H5>
+                Nombre
+                <input type="text" id="nombre2">
+            </H5>
+        </div>
+
+        <div class="col-4">
+            <H5>
+                N°
+                <input type="number" id="N°1">
+            </H5>
+        </div>
+
+        <div class="col-4">
+            <H5>
+                Direccion
+                <input type="text" id="direccion1">
+            </H5>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="col-3">
+            <H5>
+                Localidad
+                <input type="text" id="localidad1" style="width: 200px;">
+            </H5>
+        </div>
+
+        <div class="col-3">
+            <H5>
+                Distrito
+                <input type="text" id="distrito1" style="width: 200px;">
+            </H5>
+        </div>
+
+        <div class="col-3">
+            <H5>
+                Provincia
+                <input type="text" id="provincia1" style="width: 200px;">
+            </H5>
+        </div>
+
+        <div class="col-3">
+            <H5>
+                Pais
+                <input type="text" id="pais1" style="width: 200px;">
+            </H5>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="col-2">
+            <H5>
+                Sector de gestion
+            </H5>
+        </div>
     
+        <div class="col-2">
+            <H5>
+                Estatal
+                <input type="radio" id="procedencia1" name="grupo2" value="procedencia1">
+            </H5>
+        </div>
+    
+        <div class="col-2">
+            <H5>
+                Privado
+                <input type="radio" id="procedencia2" name="grupo2" value="procedencia2">
+            </H5>
+        </div>
+    
+        <div class="col-2">
+            <H5>
+                Municipal
+                <input type="radio" id="procedencia3" name="grupo2" value="procedencia3">
+            </H5>
+        </div>
+    
+        <div class="col-2">
+            <H5>
+                Nacional
+                <input type="radio" id="procedencia4" name="grupo2" value="procedencia4">
+            </H5>
+        </div>
+    
+        <div class="col-2">
+            <H5>
+                Otro
+                <input type="radio" id="procedencia5" name="grupo2" value="procedencia5">
+            </H5>
+        </div>
+    </div><!--Este DIV cierra el Container-->
+</div><!--Aqui termina la segunda carilla-->
+
+<br>
+<br>
+<br>
+
+<!--Aqui comienza la tercer carilla-->
+
+<H2><b>Inscripccion</b></H2>
+
+<br>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-3">
+            <H5>
+                Nivel Primario
+            </H5>
+        </div>
+
+        <div class="col-3">
+            <H5>
+                Año
+            </H5>
+        </div>
+
+        <div class="col-1">
+            <H5>
+                1
+                <input type="radio" id="anio1" name="grupo3" value="anio1">
+            </H5>
+        </div>
+
+        <div class="col-1">
+            <H5>
+                2
+                <input type="radio" id="anio2" name="grupo3" value="anio2">
+            </H5>
+        </div>
+
+        <div class="col-1">
+            <H5>
+                3
+                <input type="radio" id="anio3" name="grupo3" value="anio3">
+            </H5>
+        </div>
+
+        <div class="col-1">
+            <H5>
+                4
+                <input type="radio" id="anio4" name="grupo3" value="anio4">
+            </H5>
+        </div>
+
+        <div class="col-1">
+            <H5>
+                5
+                <input type="radio" id="anio5" name="grupo3" value="anio5">
+            </H5>
+        </div>
+
+        <div class="col-1">
+            <H5>
+                6
+                <input type="radio" id="anio6" name="grupo3" value="anio6">
+            </H5>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="col-6">
+            <H5>
+                Turno solicitado
+                <select id="turno">
+                    <option id="mañana">Mañana</option>
+                    <option id="tarde">Tarde</option>
+                    <option id="alternado">Alternado</option>
+                </select>
+            </H5>
+        </div>
+
+        <div class="col-6">
+            <H5>
+                Jornada
+                <select id="jornada">
+                    <option id="simple">Simple</option>
+                    <option id="completa">Completa</option>
+                    <option id="dobleescolaridad">Doble escolaridad</option>
+                </select>
+            </H5>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="col-12">
+            <H5>
+                Trayectoria del alumno en la inscripcion actual
+                <select id="condicionalumno">
+                    <option id="ingresante">Ingresante</option>
+                    <option id="reinscripto">Reinscripto</option>
+                    <option id="promovido">Promovido</option>
+                    <option id="enperiodoextendidodeensenianza">En periodo extendido de enseñanza</option>
+                    <option id="promovido">Promovido en sistema de promocion acompañada</option>
+                    <option id="repitente">Repitente</option>
+                </select>
+            </H5>
+        </div>
+    </div>
+
+    <br>
+
+    <H5>Trayectoria del alumno</H5>
+
+    <div class="row">
+        <div class="col-3">
+            <H5>
+                Asistio a sala de 5 años en jardin?
+            </H5>
+        </div>
+
+        <div class="col-4">
+            <H5>
+                Si
+                <input type="radio" id="jardin" name="grupo4" value="jardin">
+            </H5>
+        </div>
+    </div>
+
+
+
+
+</div><!--Aqui termina el div-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
