@@ -142,8 +142,9 @@ la base de datos el numero de hojas totales para asi poder asignarle a esta su c
 <!--Aqui termina la primer carilla-->
 
 <br>
+<hr>
 <br>
-<br>
+
 
 <!--Aqui comienza la segunda carilla-->
 <h2 style="display: inline;"><b>Establecimiento educativo en procedencia</b></h2>
@@ -281,8 +282,9 @@ la base de datos el numero de hojas totales para asi poder asignarle a esta su c
 </div><!--Aqui termina la segunda carilla-->
 
 <br>
+<hr>
 <br>
-<br>
+
 
 <!--Aqui comienza la tercer carilla-->
 
@@ -438,149 +440,443 @@ la base de datos el numero de hojas totales para asi poder asignarle a esta su c
             </H5>
         </div>
     </div>
-
-
-
-
-</div><!--Aqui termina el div-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</div><!--Este DIV cierra el Container-->
+<!--Aqui termina la tercer carilla-->
+
+<br>
+<hr>
+<br>
+
+
+<!--Aqui comienza la cuarta carilla-->
+<H2><B>Datos del Alumno</B></H2>
+
+<br>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-2">
+            <H5>
+                Tipo de Doc
+                <input type="number" id="tipodedocumento" style="width: 80px;">
+            </H5>
+        </div>
+
+        <div class="col-2">
+            <H5>
+                N°
+                <input type="number" id="n°documento" style="width: 110px;">
+            </H5>
+        </div>
+
+        <div class="col-1">
+            <H5>
+                Posee
+                <input type="radio" id="doc1" name="grupo6" value="doc1">
+            </H5>
+        </div>
+        
+        <div class="col-1">
+            <H5>
+                Carece
+                <input type="radio" id="doc2" name="grupo6" value="doc2">
+            </H5>
+        </div>
+
+        <div class="col-2">
+            <H5>
+                En tramite
+                <input type="radio" id="doc3" name="grupo6" value="doc3">
+            </H5>
+        </div>
+        
+        <div class="col-2">
+            <H5>
+                Estado bueno
+                <input type="radio" id="ebueno" name="grupo7" value="ebueno">
+            </H5>
+        </div>
+
+        <div class="col-2">
+            <H5>
+                Estado malo
+                <input type="radio" id="emalo" name="grupo7" value="emalo">
+            </H5>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="col-6">
+            <H5>
+                Apellido
+                <input type="text" id="apellidoalumno">
+            </H5>
+        </div>
+
+        <div class="col-6">
+            <H5>
+                Nombre
+                <input type="nombredelalumno">
+            </H5>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="col-2">
+            <H5>
+                Sexo
+                <select id="sexodelalumno">
+                <option>Hombre</option>
+                <option>Mujer</option>
+                </select>
+            </H5>
+        </div>
+
+        <div class="col-4">
+            <H5>
+                Fecha de nacimiento
+                <input type="date" id="fechadenacimiento">
+            </H5>
+        </div>
+
+        <div class="col-3">
+            <H5>
+                Lugar de nacimiento
+                <input type="text" id="lugardenacimiento" style="width: 120px;">
+            </H5>
+        </div>
+
+        <div class="col-3">
+            <H5>
+                Nacionalidad
+                <input type="text" id="nacionalidaddealumno" style="width: 180px;">
+            </H5>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="col-1">
+            <H5>
+                <b>Domicilio</b>
+            </H5>
+        </div>
+
+        <div class="col-4">
+            <H5>
+                Calle
+                <input type="text" id="calledelalumno" style="width: 350px">
+            </H5>
+        </div>
+
+        <div class="col-2">
+            <H5>
+                N°
+                <input type="number" id="numerodecalledelalumno" style="width: 170px">
+            </H5>
+        </div>
+
+        <div class="col-2">
+            <H5>
+                Piso
+                <input type="number" id="numerodepisodelalumno" style="width: 150px">
+            </H5>
+        </div>
+
+        <div class="col-3">
+            <H5>
+                Torre
+                <input type="number" id="torredelalumno" style="width: 240px">
+            </H5>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="col-2">
+            <H5>
+                Dpto
+                <input type="text" id="deptodelalumno" style="width: 135px">
+            </H5>
+        </div>
+
+        <div class="col-10">
+            <H5>
+                Entre calles
+                <input type="text" id="callesdelalumno" style="width: 970px">
+            </H5>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="col-12">
+            <H5>
+                Otros datos referidos al Domicilio
+                <input type="text" id="otrosdatosdeldomicilio" style="width: 1010px">
+            </H5>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="col-3">
+            <H5>
+                Provincia
+                <input type="text" id="provinciadelalumno" style=" width:200px">
+            </H5>
+        </div>
+
+        <div class="col-3">
+            <H5>
+                Distrito
+                <input type="text" id="distritodelalumno">
+            </H5>
+        </div>
+
+        <div class="col-3">
+            <H5>
+                Localidad
+                <input type="text" id="localidaddelalumno" style=" width:220px">
+            </H5>
+        </div>
+
+        <div class="col-3">
+            <H5>
+                Codigo Postal
+                <input type="number" id="codigopostaldelalumno" style=" width:150px">
+            </H5>
+        </div>
+
+        <br>
+        <br>
+
+    <div class="row">
+        <div class="col-6">
+            <H5>
+                Telefono
+                <input type="number" id="telefonodelalumno">
+            </H5>
+        </div>
+
+        <div class="col-6">
+            <H5>
+                Telefono Celular
+                <input type="number" id="celulardelalumno">
+            </H5>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="row">
+        <div class="col-3">
+            <H5>
+                N° de legajo
+                <input type="number" id="numerodelegajodelalumno" style="width: 180px">
+            </H5>
+        </div>
+
+        <div class="col-3">
+            <H5>
+                N° de matriz
+                <input type="number" id="numerodematrizdelalumno" style="width: 180px">
+            </H5>
+        </div>
+
+        <div class="col-6">
+            <H5>
+                N° de Formulario
+                <input type="number" id="numerodeformulariodelalumno" style="width: 180px">
+                <span style="color: gray;">A llenar por el establecimiento</span></H5>
+            </H5>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    
+    <H2><b>Otros datos del alumno</b></H2>
+
+    <div class="row">
+        <div class="col-2">
+            <H5>
+                Hermanos
+            </H5>
+        </div>
+
+        <div class="col-1">
+            <H5>
+                Si
+                <input type="radio" id="hermanos1" name="grupo8" value="hermanos1">
+            </H5>
+        </div>
+
+        <div class="col-1">
+            <H5>
+                No
+                <input type="radio" id="hermanos2" name="grupo8" value="hermanos2">
+            </H5>
+        </div>
+
+        <div class="col-2">
+            <H5>
+                Cantidad
+                <input type="number" id="cantidaddehermanos" style=" width:100px">
+            </H5>
+        </div>
+
+        <div class="col-6">
+            <H5>
+                Cantidad de hermanos que asisten a este establecimiento
+                <input type="number" id="cantidaddehermanosqueasistenaesteestablecimiento"  style=" width:110px">
+            </H5>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="row">
+        <div class="col-4">
+            <H5>
+                Cantidad de habitantes en el hogar
+                <input type="number" id="habitantesenelhogardelalumno" style=" width:90px"> 
+            </H5>
+        </div>
+
+        <div class="col-4">
+            <H5>
+                Cantidad de habitaciones en el hogar
+                <input type="number" id="habitantesenelhogardelalumno" style=" width:60px">
+            </H5>
+        </div>
+
+        <div class="col-4">
+            <H5>
+                Otra lengua hablada en el hogar
+                <input type="text" id="Otralenguahabladaenelhogardelalumno" style=" width:110px">
+            </H5>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="row">
+        <div class="col-3">
+            <H5>
+                Recibe ayuda escolar?
+            </H5>
+        </div>
+
+        <div class="col-1">
+            <H5>
+                Si
+                <input type="radio" id="ayuda1" name="grupo9" value="ayuda1">
+            </H5>
+        </div>
+
+        <div class="col-3">
+            <H5>
+                No
+                <input type="radio" id="ayuda2" name="grupo9" value="ayuda2">
+            </H5>
+        </div>
+
+        <div class="col-2">
+            <H5>
+                Obra social?
+            </H5>
+        </div>
+
+        <div class="col-1">
+            <H5>
+                Si
+                <input type="radio" id="obrasocial1" name="grupo10" value="obrasocial1">
+            </H5>
+        </div>
+
+        <div class="col-2">
+            <H5>
+                No
+                <input type="radio" id="obrasocial2" name="grupo10" value="obrasocial2">
+            </H5>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="row">
+        <div class="col-12">
+            <H5>
+                Se encuentra incorporado en algún plan o programa?
+                <select id="programaoplan">
+                    <option>Si</option>
+                    <option>AUH</option>
+                    <option>Progresar</option>
+                    <option>Becas para judicializados</option>
+                    <option>Becas por excepcion</option>
+                    <option>Otros</option>
+                </select>
+            </H5>
+        </div>
+    </div>
+    
+    <br>
+
+    <H2>Medio de transporte que lo acerca al establecimiento</H2>
+
+    <br>
+    <br>
+
+    <div class="row">
+        <div class="col-3">
+            <H5>
+                A pie
+                <input type="radio" id="Transporte1" name="grupo11" value="Transporte1">
+            </H5>
+        </div>
+
+        <div class="col-2">
+            <H5>
+                Omnibus
+                <input type="radio" id="Transporte2" name="grupo11" value="Transporte2">
+            </H5>
+        </div>
+
+        <div class="col-2">
+            <H5>
+                Auto particular
+                <input type="radio" id="Transporte3" name="grupo11" value="Transporte3">
+            </H5>
+        </div>
+
+        <div class="col-3">
+            <H5>
+                Taxi/Remis
+                <input type="radio" id="Transporte4" name="grupo11" value="Transporte4">
+            </H5>
+        </div>
+
+        <div class="col-2">
+            <H5>
+                Otro
+                <input type="radio" id="Transporte5" name="grupo11" value="Transporte5">
+            </H5>
+        </div>
+    </div>
+</div><!--Aca termina la cuarta carilla-->
+</div><!--Div del container-->
 </body>
 </html>
